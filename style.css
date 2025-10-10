@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+:root{
+	--blue-800: #242742;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: #36384D;
+  padding-top: 0;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 64px;
+  border-radius: 36px;
+  max-width: 500px; 
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label{
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-error{
+	display: none;
+	color: red;
+}
+
+@media only screen and (min-width: 23.4em){
+	
+	main{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		row-gap: 2.5em;
+	}
+
+	h1{
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--blue-800);
+	}
+
+	img{
+		height: 100%;
+		width:100%;
+	}
+
+	section{
+		padding: 0 1em;
+	}
+
+	.brief{
+		color: var(--blue-800);
+		padding-top:1.5em;
+		
+	}
+
+	ul {
+	  list-style: none;
+	  margin-top: 1.5em;
+	  padding: 0em 1.7em;
+	  color: var(--blue-800);
+	}
+
+	li {
+	  position: relative;
+	  padding: .5em;
+	}
+
+	li::before {
+	  content: "";
+	  position: absolute;
+	  left: -9%;
+	  top:40%;
+	  transform: translateY(-52%);
+	  width: 21px;
+	  height: 21px;
+	  background-image: url("./assets/images/icon-list.svg");
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	}
+
+	label{
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--blue-800);
+	}
+
+	section div{
+		padding-top:2.5em;
+		padding-bottom: 2.75em;
+	}
+
+	form input{
+		width: 100%;
+    border-radius: 8px;
+    padding: 1.2em 1.8em;
+    border: 1px solid #949494;
+    margin-top: .5em;
+    outline: none;
+	}
+
+	button{
+		width: 100%;
+    font-size: 1rem;
+    padding: 1em 3em;
+    border-radius: .5em;
+    font-weight: bold;
+    color: white;
+    background: var(--blue-800);
+    border: none;
+    margin-top: 1.5em;
+    cursor: pointer;
+	}
+
+	.modal{
+		background: white;
+    padding-bottom: 0px;
+	}
+
+	.modal-content{
+		width: 100%;
+    border-radius: unset;
+    padding: 0 1.5em;
+	}
+
+	.icon-success{
+		height: unset;
+		width: unset;
+	}
+
+	.dismissBtn{
+		margin-top: 15em;
+	}
+
+}
+
+@media only screen and (min-width: 48em){
+
+	main{
+		width: 80%;
+    margin: 0 auto;
+    background: white;
+	  padding: 0em 2em;
+		padding-top: 2em;
+    border-radius: 36px;
+	}
+
+	body{
+		background: #36384D;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+	}
+
+	h1{
+		font-size: 3.5rem;
+	}
+
+	ul{
+		padding: 0em 2.5em;
+	}
+
+	.modal {
+	  display: none; 
+	  position: fixed; 
+	  z-index: 1;
+	  left: 0;
+	  top: 0;
+	  width: 100%; 
+	  height: 100%;
+	  background-color: #36384D;
+	  padding-top: 0;
+	}
+
+
+	.modal-content {
+	  background-color: #fefefe;
+	  padding: 64px;
+	  border-radius: 36px;
+	  max-width: 500px; 
+	  display: grid;
+	  grid-template-rows: auto auto auto auto;
+	  row-gap: 32px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+  .dismissBtn{
+		margin-top: 0;
+	}
+
+}
+
+@media only screen and (min-width: 90em){
+
+	main{
+		grid-template-columns: 1fr 1fr;
+		max-width: 904px;
+	}
+
+	section{
+		grid-row-start: 1;
+		display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	padding-right: 48px;
+  	padding-left: 0px;
+	}
+
+	.brief{
+		width: 376px;
+	}
+
+	ul{
+		padding: unset;
+    padding-left: 1.8em;
+	}
+
+  section div{
+  	padding-bottom: unset;
+  }
+
+  .icon-success{
+  	height: unset;
+  	width: unset;
+  }
+
+	.dismissBtn:hover{
+		background: linear-gradient(to right, #FF6A3A, #FF527B);
+		box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+		cursor: pointer;
+	}
+
+}
+
+input:focus{
+	border: 1px solid #242742;
+}
+
+.success-email{
+	font-weight: bold;
+}
+
+.dismissBtn:focus{
+	background: linear-gradient(to right, #FF6A3A, #FF527B);
+	box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+	outline: none;
+}
+
+
+
+
+
+
+
