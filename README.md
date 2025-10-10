@@ -42,9 +42,8 @@ Your users should be able to:
 
 ### Links
 
-- Frontend Mentor solution url: https://www.frontendmentor.io/solutions/article-preview-component-TV6VVD5sUa  
-- Live Site URL: https://atif-dev.github.io/FEM_article-preview-component/
-
+- Frontend Mentor solution url:   
+- Live Site URL: 
 ## My process
 
   - Built by following Figma design.
