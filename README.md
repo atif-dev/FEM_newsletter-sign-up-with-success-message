@@ -42,7 +42,7 @@ Your users should be able to:
 
 ### Links
 
-- Frontend Mentor solution url:   
+- Frontend Mentor solution url: https://www.frontendmentor.io/solutions/figma-design-based-newsletter-signup-with-success-message-6u9QaBrxYp   
 - Live Site URL: https://atif-dev.github.io/FEM_newsletter-sign-up-with-success-message/ 
 ## My process
 
