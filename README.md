@@ -37,8 +37,8 @@ Your users should be able to:
 
 ### Screenshots
 
-![PC View](https://github.com/atif-dev/FEM_article-preview-component/blob/main/screenshots/Desktop%201440%20x%20900.png?raw=true)
-![Mobile view](https://github.com/atif-dev/FEM_article-preview-component/blob/main/screenshots/iPhone%208(375px%20width).png?raw=true)
+![PC View](https://github.com/atif-dev/FEM_newsletter-sign-up-with-success-message/blob/master/screenshots/Desktop%201440%20x%20900.png?raw=true)
+![Mobile view](https://github.com/atif-dev/FEM_newsletter-sign-up-with-success-message/blob/master/screenshots/iPhone%208.png?raw=true)
 
 ### Links
 
