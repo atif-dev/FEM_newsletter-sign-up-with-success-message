@@ -3,12 +3,12 @@ const isEmailValid = (email) =>{
 	return regex.test(email);
 }
 
-let emailInput = document.querySelector("input");
-let subscribeBtn = document.querySelector("#subBtn");
+const emailInput = document.querySelector("input");
+const subscribeBtn = document.querySelector("#subBtn");
 
 emailInput.addEventListener("input", function(){
 	 
-	 let email = this.value;
+	 const email = this.value;
 
 	 if(isEmailValid(email)){
 	 	subscribeBtn.style.background = "linear-gradient(to right, #FF6A3A, #FF527B)";
@@ -20,8 +20,8 @@ emailInput.addEventListener("input", function(){
 });
 
 const form = document.querySelector("form");
-let modal = document.querySelector('.modal');
-let emailError = document.querySelector(".email-error");
+const modal = document.querySelector('.modal');
+const emailError = document.querySelector(".email-error");
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -29,7 +29,7 @@ function handleSubmit(e) {
   if(isEmailValid(field.value)){
   	modal.style.display = 'block';
   	//capture email value and fit in success state
-  	let successEmail = document.querySelector(".success-email");
+  	const successEmail = document.querySelector(".success-email");
   	successEmail.innerHTML = field.value;
   	form.reset();
   	subscribeBtn.style.background = "#242742";
@@ -49,7 +49,7 @@ emailInput.addEventListener("click", function(){
 	emailInput.style.color = "unset";
 })
 
-let dismissBtn = document.querySelector(".dismissBtn");
+const dismissBtn = document.querySelector(".dismissBtn");
 dismissBtn.addEventListener("click", function(){
 	modal.style.display = "none";
 })
