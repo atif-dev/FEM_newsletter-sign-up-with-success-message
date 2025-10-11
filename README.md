@@ -56,7 +56,7 @@ Your users should be able to:
     
 ### Continued development
 
-  With the help of GROK AI I have found two screen readers(NVDA and VoiceOver). In future I will explore how to check/test accessibility. 
+  With the help of GROK AI I found two screen readers(NVDA and VoiceOver). In future I will explore how to check/test accessibility. 
 
 ### Useful resources
 
